@@ -4,9 +4,7 @@
 <head>
 <title>CSE Department</title>
 
-<script src="https://unpkg.com/html5-qrcode"></script>
 
-<style>
 
 body{
 font-family: Arial;
@@ -62,30 +60,10 @@ personal computers and software industry. His work inspired millions of
 computer science students around the world.
 </p>
 
-<h2>Scan QR Code</h2>
 
-<div id="reader"></div>
 
 </div>
 
-<script>
 
-function onScanSuccess(decodedText) {
-alert("Scanned QR Code: " + decodedText);
-}
-
-function onScanFailure(error) {
-}
-
-let html5QrcodeScanner = new Html5QrcodeScanner(
-"reader",
-{ fps: 10, qrbox: 250 }
-);
-
-html5QrcodeScanner.render(onScanSuccess, onScanFailure);
-
-</script>
-
-</body>
 
 </html>
